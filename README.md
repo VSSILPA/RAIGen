@@ -9,6 +9,10 @@
   <a href="https://vssilpa.github.io/RAIGen_webpage/">Project Page</a>
 </p>
 
+<p align="center">
+  Accepted at <strong>ICML 2026</strong>
+</p>
+
 ---
 
 ## Overview
