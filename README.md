@@ -21,7 +21,7 @@ RAIGen discovers rare visual attributes that text-to-image diffusion models syst
 
 1. Extracting mid-block UNet activations over generated images
 2. Training a **Matryoshka Sparse Autoencoder (MSAE)** on those activations to decompose them into interpretable features
-3. Identifying **minority neurons** — features that activate rarely and represent semantically distinct, under-represented attributes
+3. Identifying **minority neurons** — features that activate rarely and represent semantically distinct, under-represented attributes, via a novel **minority score**.
 4. Using a VLM (**gpt-5.2**) to annotate each minority neuron with a human-readable attribute description
 
 ---
@@ -63,9 +63,9 @@ bash scripts/run_raigen.sh
 
 This executes three steps:
 
-1. **Activation collection** — generates 5 000 images with SDXL and extracts UNet mid-block activations using `accelerate` 
-2. **MSAE training** — trains a Matryoshka Sparse Autoencoder on the activations via `msae/train_msae.py`
-3. **Annotation** — uses gpt-5.2 to identify and describe minority neuron attributes via `annotate.py`
+1. **Activation collection** — generates 5 000 images with SDXL and extracts UNet mid-block activations using `accelerate`
+2. **MSAE training + minority neuron identification** — trains a Matryoshka Sparse Autoencoder on the activations and immediately identifies minority neurons using the novel minority score (`msae/train_msae.py`)
+3. **Annotation** — uses gpt-5.2 to annotate each minority neuron with a human-readable attribute description (`annotate.py`)
 
 Outputs are saved to `checkpoints_sdxl/<task>/<prompt>/`.
 
