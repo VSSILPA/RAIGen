@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Data and outputs
+activations_sdxl/
+checkpoints_sdxl/
+raigen_eval_outputs/
+dataset_sdxl/
+
+# Logs
+*.log
+wandb/

@@ -1,0 +1,9 @@
+Doctor
+Attendant
+Nurse
+Sheriff
+Hairdresser
+CEO
+Farmer
+Manager
+Cleaner
