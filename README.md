@@ -5,8 +5,17 @@
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2602.06806">Paper</a> &nbsp;|&nbsp;
-  <a href="https://vssilpa.github.io/RAIGen_webpage/">Project Page</a>
+  <a href="https://arxiv.org/abs/2602.06806">
+    <img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white" alt="Paper"/>
+  </a>
+  &nbsp;
+  <a href="https://vssilpa.github.io/RAIGen_webpage/">
+    <img src="https://img.shields.io/badge/Project-Page-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Project Page"/>
+  </a>
+  &nbsp;
+  <a href="https://vssilpa.github.io/RAIGen_webpage/demo/demo.html">
+    <img src="https://img.shields.io/badge/Interactive-Demo-34A853?style=for-the-badge&logo=openai&logoColor=white" alt="Demo"/>
+  </a>
 </p>
 
 <p align="center">
