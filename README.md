@@ -123,7 +123,7 @@ top_n=10          # number of minority neurons to evaluate (5 for coco, 10 for p
 minority_dir="sdxl_unet.mid_block_20480_2_[2048, 18432]/final/raigen_neurons/neurons_analysis_group_0_2048"
 ```
 
-To skip Stage 1 entirely and use pre-computed annotations, change `annotations_path` to:
+To skip the RAIGen pipeline entirely and use our pre-computed annotations directly, change `annotations_path` to:
 
 ```bash
 annotations_path="$root_dir/raigen_annotations/$task/${prompt}_annotations.json"
@@ -156,6 +156,8 @@ This codebase builds upon:
 ---
 
 ## Citation
+
+If you find this work useful, please cite our paper:
 
 ```bibtex
 @article{sreelatha2026raigen,
