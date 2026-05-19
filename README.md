@@ -81,16 +81,6 @@ To run the notebook, you need:
 - The downloaded SAE checkpoint (`sae.pt`)
 - Hooked activations and corresponding generated images for your prompt — run only the activation collection step from `scripts/run_raigen.sh` to obtain these.
 
-Edit the variables at the top of the notebook to point to your paths:
-
-```python
-PROMPT       = 'Doctor'
-SAE_CKPT_DIR = f'raigen_checkpoints/prof/{PROMPT}'
-IMAGE_DIR    = f'dataset_sdxl/prof/{PROMPT}/stable-diffusion-xl-base-1.0'
-ACT_DIR      = f'activations_sdxl/prof/{PROMPT}/stable-diffusion-xl-base-1.0'
-GROUP_SIZES  = [2048, 18432]   # must match the checkpoint's group sizes
-```
-
 The notebook outputs a grid showing the top activating images and heatmap overlays for each minority neuron, ranked by minority score.
 
 Pre-computed annotations can also be used directly at evaluation time without running the notebook (see Evaluation below).
